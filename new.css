@@ -37,8 +37,8 @@ body {
 }
 .lorem1 {
 	position: absolute;
-    top: 30px;
-    left: 100px;
+    top: 1%;
+    left: 6%;
 	font-size: 100px;
 	font-weight: bold;
 	color: #38496E;
@@ -58,7 +58,7 @@ body {
 	left: 30px;
 	font-size:35px;
 	overflow: auto;
-	height: 76%;
+	height: 66%;
 	margin-top: 3%;
 	margin-right: 10%;
 	background: rgba(255,255,255,0.4);
@@ -290,7 +290,7 @@ button {
 }
 @media only screen and (max-width: 600px) {
 	.lorem {font-size: 16px;}
-	.lorem1 {font-size: 26px;}
+	.lorem1 {font-size: 32px;}
 }
 /* Для мобильных телефонов: */
 [class*="col-"] {
