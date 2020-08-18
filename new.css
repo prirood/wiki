@@ -1,0 +1,333 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #bbc6a9;
+}
+#header {
+	position: relative;
+}
+.open {
+	font-size:40px;
+	cursor:pointer;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	color: #715c80;
+	
+}
+
+#header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.logo {
+	height: 160px;
+	width: 100%;
+	margin-top: 10px;
+	position: relative;
+}
+.lorem1 {
+	position: absolute;
+    top: 30px;
+    left: 100px;
+	font-size: 100px;
+	font-weight: bold;
+	color: #38496E;
+}
+
+.fon {
+	margin: 20px auto 0;
+	
+}
+.fonimg {
+	position: relative;
+}
+
+.lorem {
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	font-size:35px;
+	overflow: auto;
+	height: 76%;
+	margin-top: 3%;
+	margin-right: 10%;
+	background: rgba(255,255,255,0.4);
+	padding-top: 30px;
+	padding-left: 20px;
+	text-indent: 40px;
+}
+
+.image{
+	display: block;
+	width: 100%;
+	border: 2px solid #f0d282;
+	
+}
+.container {
+	
+	overflow: hidden;
+}
+
+
+/* Расположите контейнер изображения (необходимо расположить стрелки влево и вправо) */
+.container {
+  position: relative;
+}
+
+.mySlides0 {
+	overflow: hidden;
+}
+
+/* Скрыть изображения по умолчанию */
+.mySlides {
+  display: none;
+}
+.mySlides2 {
+	width: 100%;
+}
+
+/* Добавить указатель при наведении на миниатюры изображений */
+.cursor {
+  cursor: pointer;
+}
+
+/* Вперед и предыдущие кнопки */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Позиция "next кнопка" на право */
+.next {
+  right: 1%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 1%;
+}
+
+/* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Номера текст (1/3 и т.д.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+
+
+/* Контейнер для текста изображения */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Шесть колонн бок о бок */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Добавить эффект прозрачности для миниатюрных изображений */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+#header span{
+	text-align: center;
+	font-size: 200px;
+	margin: 110px;
+	
+	background: rgba(76,175,80,0.5);
+}
+
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #73694F;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	
+}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color:#D1D4A1;
+	display: block;
+    transition: 0.3s;
+		
+}
+button {
+	background-color: #59523E;
+	border: none;
+	width: 100%;
+}
+.sidenav button {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #D1D4A1;
+	display: block;
+    transition: 0.3s;	
+}
+#myBtn1 {
+	text-align: left;
+}
+.sidenav a:hover {
+	display: block;
+	color: #f1f1f1;
+}
+.sidenav button:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0,0,0); /* Цвет запасной вариант */
+  background-color: rgba(0,0,0,0.6); /* Черный с непрозрачностью */
+}
+/* Модальное содержание/коробка */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% сверху и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  height: 84%;
+}
+
+.modal2 {
+	background: #4D6D4C;
+	width: 100%;
+	height: 90%;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Для мобильных телефонов: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* Для планшетов: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* Для настольных компьтеров: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+#footer {
+	background-color: #424141;
+	width: 100%;
+	height: 60px;
+	color: #F0ECEB;
+	text-align: center;
+	line-height: 60px;
+}
