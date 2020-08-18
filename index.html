@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8" />
+   <title>сайт1</title>
+   <link rel="stylesheet" href="new.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+   <div id="header">
+   
+	<div class="open" id="open1" onclick="openNav()">&#9776;</div>
+    <div id="header1">
+	 <img src="logo.png" class="logo" alt=""/><p class="lorem1">Логотип</p>
+	</div>
+	<div class="col-1"></div>
+	<div class="fon col-10">
+	<div class="fonimg">
+     <img src="Mouse_computing_Camera_lens_Coffee_Laptops_Camera_572800_1280x720.jpg" class="image" /><div class="lorem">Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+
+Почему он используется?
+Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+
+
+Откуда он появился?
+Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</div>
+      </div>
+	  </div>
+	  <div class="col-3"></div>
+	 <div class="container0 col-6">
+	  <div class="container" id="container">
+
+  <!-- Полноразмерные изображения с числовым текстом -->
+  <div class="mySlides0">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+      <img src="Norway_Bergen_Autumn_Forests_Gamlehaugen_Bay_573386_1280x854.jpg" class="mySlides2">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+      <img src="glacier-583419_1920.jpg" class="mySlides2">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+      <img src="antarctica-4500447_1920.jpg" class="mySlides2">
+  </div>
+  </div>
+  
+
+  <!-- Вперед и назад кнопки -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  <div class="caption-container0">
+  <!-- Текст изображения -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Миниатюры -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Norway_Bergen_Autumn_Forests_Gamlehaugen_Bay_573386_1280x854.jpg" style="width:100%" onclick="currentSlide(1)" alt="Лес">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="glacier-583419_1920.jpg" style="width:100%" onclick="currentSlide(2)" alt="Пять земель">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="antarctica-4500447_1920.jpg" style="width:100%" onclick="currentSlide(3)" alt="Горы и фьорды">
+    </div>
+    </div>
+  
+</div>
+	 </div>
+	 </div>
+	
+   </div>
+   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<button id="myBtn1">О нас</button>
+	<a href="#container" id="myBtn2">Услуги</a>
+	<a href="#" id="myBtn3">Клиенты</a>
+	<a href="#" id="myBtn4">Контакт</a>
+   </div>
+   <div id="myModal" class="modal">
+    <div class="modal-content">
+	 <span class="close">&times;</span>
+	 <div class="modal2">некоторый текст в модальном...
+	 </div>
+	</div>
+   </div>
+   
+   <div id="footer">
+	 
+	 <h6>некоторый текст...</h6>
+   </div>
+   
+  <script src="../jquery-3.4.1.js"></script>
+  <script src="new.js"></script>
+  </body>
+ </html>
